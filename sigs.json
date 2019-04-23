@@ -3,40 +3,40 @@
         "Extra": 0,
         "Mode_Read": false,
         "Mode_Subtract": false,
-        "Module": "client.dll",
+        "Module": "client_panorama.dll",
         "Offset": 0,
-        "Pattern": "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F 57 C0"
+        "Pattern": "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F"
     },
     "m_dwClientState": {
-        "Extra": 1,
+        "Extra": 0,
         "Mode_Read": true,
         "Mode_Subtract": true,
         "Module": "engine.dll",
-        "Offset": 0,
+        "Offset": 1,
         "Pattern": "A1 ? ? ? ? 33 D2 6A 00 6A 00 33 C9 89 B0"
     },
     "m_dwEntityList": {
-        "Extra": 1,
+        "Extra": 0,
         "Mode_Read": true,
         "Mode_Subtract": true,
-        "Module": "client.dll",
-        "Offset": 0,
+        "Module": "client_panorama.dll",
+        "Offset": 1,
         "Pattern": "BB ? ? ? ? 83 FF 01 0F 8C ? ? ? ? 3B F8"
     },
     "m_dwGlowObject": {
-        "Extra": 1,
+        "Extra": 4,
         "Mode_Read": true,
         "Mode_Subtract": true,
-        "Module": "client.dll",
-        "Offset": 4,
+        "Module": "client_panorama.dll",
+        "Offset": 1,
         "Pattern": "A1 ? ? ? ? A8 01 75 4B"
     },
 	"m_dwLocalPlayer": {
-        "Extra": 1,
+        "Extra": 4,
         "Mode_Read": true,
         "Mode_Subtract": true,
-        "Module": "client.dll",
-        "Offset": 16,
-        "Pattern": "A3 ? ? ? ? C7 05 ? ? ? ? ? ? ? ? E8 ? ? ? ? 59 C3 6A ?"
+        "Module": "client_panorama.dll",
+        "Offset": 3,
+        "Pattern": "8D 34 85 ? ? ? ? 89 15 ? ? ? ? 8B 41 08 8B 48 04 83 F9 FF"
     }
 }
