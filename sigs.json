@@ -1,0 +1,42 @@
+{
+    "LineGoesThroughSmoke": {
+        "Extra": 0,
+        "Mode_Read": false,
+        "Mode_Subtract": false,
+        "Module": "client.dll",
+        "Offset": 0,
+        "Pattern": "55 8B EC 83 EC 08 8B 15 ? ? ? ? 0F 57 C0"
+    },
+    "m_dwClientState": {
+        "Extra": 1,
+        "Mode_Read": true,
+        "Mode_Subtract": true,
+        "Module": "engine.dll",
+        "Offset": 0,
+        "Pattern": "A1 ? ? ? ? 33 D2 6A 00 6A 00 33 C9 89 B0"
+    },
+    "m_dwEntityList": {
+        "Extra": 1,
+        "Mode_Read": true,
+        "Mode_Subtract": true,
+        "Module": "client.dll",
+        "Offset": 0,
+        "Pattern": "BB ? ? ? ? 83 FF 01 0F 8C ? ? ? ? 3B F8"
+    },
+    "m_dwGlowObject": {
+        "Extra": 1,
+        "Mode_Read": true,
+        "Mode_Subtract": true,
+        "Module": "client.dll",
+        "Offset": 4,
+        "Pattern": "A1 ? ? ? ? A8 01 75 4B"
+    },
+	"m_dwLocalPlayer": {
+        "Extra": 1,
+        "Mode_Read": true,
+        "Mode_Subtract": true,
+        "Module": "client.dll",
+        "Offset": 16,
+        "Pattern": "A3 ? ? ? ? C7 05 ? ? ? ? ? ? ? ? E8 ? ? ? ? 59 C3 6A ?"
+    }
+}
